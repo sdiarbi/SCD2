@@ -38,12 +38,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   shant_dbt_project:
     example:
-      schema: example
+      +schema: example
 
     silver:
-      schema: silver
-      materialized: table
+      +schema: silver
+      +materialized: table
 
     gold:
-      schema: gold
-      materialized: view
+      +schema: gold
+      +materialized: view
